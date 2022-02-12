@@ -1,0 +1,87 @@
+<table min_lib_ver="4.5" name="lolyr">
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<level ai_group_type="America" briefing_assets_gui="@IDbf70ce3b3bc4ae52@" briefing_dialog="Play_pln_ukranian_stage1_brief" cube="cube_apply_heist_bank" group_ai_preset="small_urban" id="level2" intro_event="Play_pln_ukranian_stage1_intro_a" max_bags="999" music="heist" player_style="generic">
+		<assets/>
+		<outro_event>
+			<value_node value="Play_pln_ukranian_stage1_end_a"/>
+			<value_node value="Play_pln_ukranian_stage1_end_b"/>
+			<value_node value="Play_pln_ukranian_stage1_end_c"/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/ukrainian_job"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world_sounds"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/pc_only/pc_only"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/world/world"/>
+			<value_node value="levels/narratives/vlad/ukrainian_job/editor_only/editor_only"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="vld_ukranian_brf" contact="vlad" id="lolyr" jc="20" load_screen="guis/dlcs/pic/textures/loading/job_jewelry_store" region="street">
+		<chain>
+			<table level_id="level2" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="20"/>
+			<value_node value="8000"/>
+			<value_node value="20000"/>
+			<value_node value="40000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="vld_ukranian_cnc_01"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_ukr1"/>
+			<value_node value="cn_ukr2"/>
+			<value_node value="cn_ukr3"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value="vld_ukranian_debrief"/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="5"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="1e+007"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+			<value_node value="10000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="1e+007"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+			<value_node value="4000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="1e+007"/>
+			<value_node value="1e+007"/>
+			<value_node value="23000"/>
+			<value_node value="25000"/>
+			<value_node value="30000"/>
+			<value_node value="30000"/>
+			<value_node value="30000"/>
+		</payout>
+	</narrative>
+</table>
